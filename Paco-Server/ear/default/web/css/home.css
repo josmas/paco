@@ -16,7 +16,8 @@
 }
 
 md-toolbar {
-  background: #5c6bc0 !important;
+  /*background: #5c6bc0 !important;*/
+  background: #5C6C35 !important;
   box-shadow: 0px 3px 3px rgba(0,0,0,.1);
   color: white !important;
 }
@@ -28,7 +29,7 @@ md-toolbar a {
 
 md-toolbar .paco-home {
   background: white;
-  border-radius: 50%;
+  border-radius: 25%;
   cursor: pointer;
   height: 96px;
   margin: 16px;
@@ -113,7 +114,8 @@ md-toolbar .subtitle {
 }
 
 .welcome .top .signin button {
-  background: #5c6bc0;
+  /*background: #5c6bc0;*/
+  background: #5C6C35;
   color: white;
   margin: 0 8px 0 0;
 }

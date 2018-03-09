@@ -3,7 +3,8 @@ md-tabs-ink-bar {
 }
 
 md-tabs-canvas {
-  background: #5c6bc0 !important; 
+  /*background: #5c6bc0 !important;*/
+  background: #5C6C35 !important;
 }
 
 md-tab-item {
@@ -11,7 +12,8 @@ md-tab-item {
 }
 
 md-tab-item.md-active {
-  background-color: #5c6bc0 !important;
+  /*background-color: #5c6bc0 !important;*/
+  background-color: #5C6C35 !important;
   color: white !important;
 }
 
