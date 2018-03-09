@@ -89,7 +89,7 @@ public class ExperimentDetailActivity extends ActionBarActivity implements Exper
     actionBar.setLogo(R.drawable.ic_launcher);
     actionBar.setDisplayUseLogoEnabled(true);
     actionBar.setDisplayShowHomeEnabled(true);
-    actionBar.setBackgroundDrawable(new ColorDrawable(0xff4A53B3));
+    actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple_background)));
 
 
     final Intent intent = getIntent();

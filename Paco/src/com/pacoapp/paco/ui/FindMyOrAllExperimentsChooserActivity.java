@@ -27,7 +27,7 @@ public class FindMyOrAllExperimentsChooserActivity extends ActionBarActivity {
     actionBar.setDisplayUseLogoEnabled(true);
     actionBar.setDisplayShowHomeEnabled(true);
     actionBar.setDisplayHomeAsUpEnabled(true);
-    actionBar.setBackgroundDrawable(new ColorDrawable(0xff4A53B3));
+    actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple_background)));
   }
 
 

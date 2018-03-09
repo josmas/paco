@@ -131,7 +131,7 @@ public class ExperimentExecutor extends ActionBarActivity implements ChangeListe
     actionBar.setDisplayShowHomeEnabled(true);
     // actionBar.setDisplayHomeAsUpEnabled(true);
     actionBar.setDisplayShowTitleEnabled(true);
-    actionBar.setBackgroundDrawable(new ColorDrawable(0xff4A53B3));
+    actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple_background)));
 
     experimentProviderUtil = new ExperimentProviderUtil(this);
     if (experiment == null || experimentGroup == null) {

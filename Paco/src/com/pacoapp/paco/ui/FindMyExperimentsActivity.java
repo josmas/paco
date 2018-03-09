@@ -105,7 +105,7 @@ public class FindMyExperimentsActivity extends ActionBarActivity implements Netw
     actionBar.setLogo(R.drawable.ic_launcher);
     actionBar.setDisplayUseLogoEnabled(true);
     actionBar.setDisplayShowHomeEnabled(true);
-    actionBar.setBackgroundDrawable(new ColorDrawable(0xff4A53B3));
+    actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple_background)));
     actionBar.setDisplayHomeAsUpEnabled(true);
 
     Intent intent = getIntent();
@@ -179,7 +179,7 @@ public class FindMyExperimentsActivity extends ActionBarActivity implements Netw
     ActionBar actionBar = getSupportActionBar();
     actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
     actionBar.setDisplayShowTitleEnabled(true);
-    actionBar.setTitle("Paco");
+    actionBar.setTitle("Easy Health");
   }
 
   @SuppressLint("NewApi")

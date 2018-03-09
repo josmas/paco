@@ -96,7 +96,7 @@ public class FeedbackActivity extends ActionBarActivity {
     actionBar.setDisplayShowHomeEnabled(true);
     actionBar.setDisplayHomeAsUpEnabled(true);
     actionBar.setDisplayShowTitleEnabled(false);
-    actionBar.setBackgroundDrawable(new ColorDrawable(0xff4A53B3));
+    actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple_background)));
 
 
     experimentProviderUtil = new ExperimentProviderUtil(this);

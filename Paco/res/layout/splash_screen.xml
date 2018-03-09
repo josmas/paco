@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Paco"
+        android:text="Easy Health"
         android:textAppearance="?android:attr/textAppearanceLarge" 
         android:textColor="#ffffff"/>
 
@@ -24,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_centerInParent="true"
         android:text="@string/the_personal_analytics_companion_subtitle"
         android:textAppearance="?android:attr/textAppearanceMedium" 
         android:textColor="#ffffff"/>
@@ -32,7 +33,7 @@
         android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/paco128" />
+        android:src="@drawable/logo_easy_health" />
 
     <TextView
         android:id="@+id/textView3"

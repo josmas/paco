@@ -199,7 +199,7 @@ public class MyExperimentsActivity extends ActionBarActivity implements
     ActionBar actionBar = getSupportActionBar();
     actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
     actionBar.setDisplayShowTitleEnabled(true);
-    actionBar.setTitle("Paco");
+    actionBar.setTitle("Easy Health");
 }
 
 
@@ -341,7 +341,7 @@ public class MyExperimentsActivity extends ActionBarActivity implements
       actionBar.setLogo(R.drawable.ic_launcher);
       actionBar.setDisplayUseLogoEnabled(true);
       actionBar.setDisplayShowHomeEnabled(true);
-      actionBar.setBackgroundDrawable(new ColorDrawable(0xff4A53B3));
+      actionBar.setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.purple_background)));
 
 
       mNavigationDrawerFragment.setUp(R.id.navigation_drawer, (DrawerLayout) findViewById(R.id.drawer_layout));

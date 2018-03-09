@@ -23,7 +23,7 @@
   android:stretchColumns="2">
   <TableRow>
     <ImageView
-      android:layout_column="1" android:src="@drawable/paco64"/>
+      android:layout_column="1" android:src="@drawable/logo_easy_health"/>
     <LinearLayout
       android:layout_column="2"
       android:layout_height="wrap_content"
