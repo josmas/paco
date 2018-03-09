@@ -224,7 +224,7 @@
     <string name="action_troubleshooting" description="Label for Menu/Toolbar action to go to troubleshooting screen">Troubleshooting</string>
     <string name="action_user_guide" description="Label for Menu/Toolbar action to go to User Guide screen">User Guide</string>
     <string name="action_email_paco_team"  description="Label for Menu/Toolbar action to go email Paco team">Email Paco Team</string>
-    <string name="action_about" description="Label for Menu/Toolbar action to go to About screen">About Paco</string>
+    <string name="action_about" description="Label for Menu/Toolbar action to go to About screen">About Easy Health</string>
     <string name="action_user_agreement" description="Label for Menu/Toolbar action to go to User Agreement screen">User Agreement</string>
     <string name="action_open_source_libs" description="Label for Menu/Toolbar action to go to Open source libraries screen">Open source libraries</string>
     <string name="find_my_experiments"  description="Nav Drawer label for Experiments Invitations Screen">My Experiment Invitations</string>
