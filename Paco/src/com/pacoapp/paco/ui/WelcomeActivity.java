@@ -94,11 +94,13 @@ public class WelcomeActivity extends ActionBarActivity {
           }
         });
 
-    findViewById(R.id.welcome_about).setOnClickListener(new OnClickListener() {
+    View versionButton = findViewById(R.id.welcome_about);
+    versionButton.setOnClickListener(new OnClickListener() {
       public void onClick(View v) {
         about();
       }
     });
+    versionButton.setVisibility(View.GONE);
   }
 
   @Override
