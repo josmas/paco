@@ -41,7 +41,7 @@ public class OptionsMenu {
     menu.add(0, PAGING_ITEM, 0, R.string.edit_schedule_menu_item);
     menu.add(0, STOP_ITEM, 1, R.string.stop_experiment_menu_item);
     menu.add(0, DATA_ITEM, 2, R.string.explore_data_menu_item);
-    menu.add(0, HELP_ITEM, 3, R.string.about_paco_menu_item);
+//    menu.add(0, HELP_ITEM, 3, R.string.about_paco_menu_item);
 
     return true;
   }
