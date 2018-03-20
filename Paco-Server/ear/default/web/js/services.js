@@ -475,15 +475,16 @@ pacoApp.service('config', function() {
     'Fifth'
   ];
 
-  this.responseTypes =[ 
-  {"id" : 'likert', "name" : 'Scale'},
-  {"id" : 'likert_smileys', "name" : '5 Point Smiley Scale'},
-  {"id" : 'number', "name" : 'Number'},
-  {"id" : 'open text', "name" : 'Open Text'},
-  {"id" : 'list', "name" : 'List'},
-  {"id" : 'photo', "name" : 'Photo'},
-  {"id" : 'location', "name" : 'Location'},
-  {"id" : 'audio', "name" : 'Audio'}];
+  this.responseTypes =[
+      {"id" : 'likert', "name" : 'Scale'},
+      {"id" : 'likert_smileys', "name" : '5 Point Smiley Scale'},
+      {"id" : 'number', "name" : 'Number'},
+      {"id" : 'open text', "name" : 'Open Text'},
+      {"id" : 'list', "name" : 'List'},
+      {"id" : 'photo', "name" : 'Photo'},
+      {"id" : 'location', "name" : 'Location'},
+      {"id" : 'audio', "name" : 'Audio'},
+      {"id" : "va_scale", "name" : 'Visual Analogue Scale'}];
   
   this.feedbackTypes = [
     'Static Message',

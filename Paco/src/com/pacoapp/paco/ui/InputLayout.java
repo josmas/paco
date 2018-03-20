@@ -27,6 +27,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+import android.widget.SeekBar;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -221,6 +222,8 @@ public class InputLayout extends LinearLayout implements SpeechRecognitionListen
       return getPhotoValue();
     } else if (input.getResponseType().equals(Input2.AUDIO)) {
       return getAudioValue();
+    } else if (input.getResponseType().equals(Input2.VA_SCALE)) {
+      return intToString(getVaScaleValue());
     }
     return null;
   }
@@ -245,6 +248,8 @@ public class InputLayout extends LinearLayout implements SpeechRecognitionListen
       return getPhotoValue();
     } else if (input.getResponseType().equals(Input2.AUDIO)) {
       return getAudioValue();
+    } else if (input.getResponseType().equals(Input2.VA_SCALE)) {
+      return intToString(getVaScaleValue());
     }
     return null;
   }
@@ -324,6 +329,10 @@ public class InputLayout extends LinearLayout implements SpeechRecognitionListen
       return Base64.encodeToString(bytesOut.toByteArray(), Base64.DEFAULT);
     }
     return "";
+  }
+
+  private Integer getVaScaleValue() {
+    return ((SeekBar) componentWithValue).getProgress();
   }
 
   private Bitmap decodeFile(File f) {
@@ -495,8 +504,28 @@ public class InputLayout extends LinearLayout implements SpeechRecognitionListen
       return renderPhotoButton(input2);
     } else if (questionType.equals(Input2.AUDIO)) {
       return renderAudioRecorder(input2);
+    } else if (questionType.equals(Input2.VA_SCALE)) {
+      return renderVaScale();
     }
     return null;
+  }
+
+  private View renderVaScale() {
+    ((LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE))
+        .inflate(R.layout.va_scale, this, true);
+    SeekBar seekBar = (SeekBar) findViewById(R.id.va_scale_input);
+    seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+      @Override
+      public void onStartTrackingTouch(SeekBar s) {
+        notifyChangeListeners();
+      }
+      @Override
+      public void onStopTrackingTouch(SeekBar seekBar) {}
+      @Override
+      public void onProgressChanged(SeekBar seekBar, int progress,boolean fromUser) {}
+    });
+
+    return seekBar;
   }
 
   private View renderPhotoButton(Input2 input2) {
