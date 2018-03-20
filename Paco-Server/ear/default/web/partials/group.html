@@ -87,6 +87,16 @@
             <div ng-if="input.responseType === 'location'" class="input">
               Location
             </div>
+
+            <div ng-if="input.responseType === 'va_scale'" class="input">
+              <md-slider-container>
+                <md-slider flex min="0" max="100" ng-model="va_scale" aria-label="va_scale" id="va_scale-slider">
+                </md-slider>
+                <md-input-container>
+                  <input flex type="number" ng-model="va_scale" aria-label="va_scale" aria-controls="va_scale-slider">
+                </md-input-container>
+              </md-slider-container>
+            </div>
           </div>
           <md-divider></md-divider>
         </div>
