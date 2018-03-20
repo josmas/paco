@@ -225,9 +225,9 @@ public class FindMyExperimentsActivity extends ActionBarActivity implements Netw
     } else if (id == R.id.action_user_agreement) {
       launchEula();
       return true;
-    } else if (id == R.id.action_open_source_libs) {
-      launchOpenSourceLibs();
-      return true;
+//    } else if (id == R.id.action_open_source_libs) {
+//      launchOpenSourceLibs();
+//      return true;
     } else if (id == R.id.action_email_paco_team) {
       launchEmailPacoTeam();
       return true;
