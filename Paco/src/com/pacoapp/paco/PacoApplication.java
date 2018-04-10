@@ -54,7 +54,7 @@ public class PacoApplication extends Application {
     PendingIntent alarmIntent = PendingIntent.getService(this, NOISE_REQUEST_CODE,
         alarmReceiverIntent, PendingIntent.FLAG_CANCEL_CURRENT);
     alarmMgr.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),
-        AlarmManager.INTERVAL_FIFTEEN_MINUTES / 15, alarmIntent); // 1 minute //TODO (jos) change after testing
+        AlarmManager.INTERVAL_FIFTEEN_MINUTES, alarmIntent);
 
     // for debugging
     SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
