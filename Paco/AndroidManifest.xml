@@ -258,6 +258,7 @@
 
         <service  android:name=".sensors.android.activeness.RegisterActivityTransitionsIntentService" />
         <service  android:name=".sensors.android.activeness.DetectedTransitionIntentService" />
+        <service  android:name=".sensors.noice.NoiseService" />
 
         <receiver android:name="com.pacoapp.paco.os.ExperimentExpirationAlarmReceiver" android:exported="false">
             <intent-filter>
@@ -319,7 +320,8 @@
                 <action android:name="com.pacoapp.paco.action.PACO_EXPERIMENT_RESPONSE_RECEIVED_ACTION" />     
                 <action android:name="android.intent.action.ACTION_SHUTDOWN" />
                 <action android:name="com.pacoapp.paco.action.PACO_EXPERIMENT_ACTIVENESS_ACTION"/>
-            </intent-filter>            
+                <action android:name="com.pacoapp.paco.action.PACO_EXPERIMENT_NOICE_ACTION"/>
+            </intent-filter>
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_REMOVED" />
                 <action android:name="android.intent.action.PACKAGE_ADDED" />

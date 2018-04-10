@@ -31,6 +31,7 @@ public class InterruptCue extends ModelBase implements Validatable, java.io.Seri
   public static final int NOTIFICATION_TRAY_CANCELLED = 26;
   public static final int NOTIFICATION_CLICKED = 27;
   public static final int WALKING_TO_IDLE_TRANSITION = 28;
+  public static final int NOICE_THRESHOLD_DETECTED = 29;
 
 
 
@@ -44,7 +45,7 @@ public class InterruptCue extends ModelBase implements Validatable, java.io.Seri
                                                 NOTIFICATION_CREATED, NOTIFICATION_TRAY_OPENED,
                                                 NOTIFICATION_TRAY_CLEAR_ALL, NOTIFICATION_TRAY_SWIPE_DISMISS,
                                                 NOTIFICATION_TRAY_CANCELLED, NOTIFICATION_CLICKED,
-                                                WALKING_TO_IDLE_TRANSITION};
+                                                WALKING_TO_IDLE_TRANSITION, NOICE_THRESHOLD_DETECTED};
 
   public static final String[] CUE_EVENT_NAMES = new String[] {"HANGUP (deprecated)", "USER_PRESENT", "Paco Action",
                                                            "App Started", "App Stopped",
@@ -59,7 +60,8 @@ public class InterruptCue extends ModelBase implements Validatable, java.io.Seri
                                                            "Notification shade dismiss notification",
                                                            "Notification shade closed",
                                                            "Notification tapped in shade",
-                                                           "Walking to Idle transition"};
+                                                           "Walking to Idle transition",
+                                                           "Noise threshold detected"};
   public static final Integer VIEW_CLICKED = 1;
 
 

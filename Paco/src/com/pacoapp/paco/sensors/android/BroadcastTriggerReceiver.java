@@ -52,6 +52,7 @@ public class BroadcastTriggerReceiver extends BroadcastReceiver {
   private static final String ANDROID_PLAY_MUSIC_ACTION = "com.android.music.playstatechanged";
 
   public static final String PACO_EXPERIMENT_ACTIVENESS_ACTION = "com.pacoapp.paco.action.PACO_EXPERIMENT_ACTIVENESS_ACTION";
+  public static final String PACO_EXPERIMENT_NOICE_ACTION = "com.pacoapp.paco.action.PACO_EXPERIMENT_NOICE_ACTION";
   private static Logger Log = LoggerFactory.getLogger(BroadcastTriggerReceiver.class);
 
 
@@ -75,6 +76,8 @@ public class BroadcastTriggerReceiver extends BroadcastReceiver {
       triggerPacoExperimentResponseReceivedEvent(context ,intent);
     } else if (intent.getAction().equals(PACO_EXPERIMENT_ACTIVENESS_ACTION)) {
       triggerPacoExperimentActivenessEvent(context ,intent);
+    } else if (intent.getAction().equals(PACO_EXPERIMENT_NOICE_ACTION)) {
+      triggerPacoExperimentNoiceEvent(context ,intent);
     } else if (isPackageRemoved(context, intent)) {
       triggerPackageRemovedEvent(context, intent);
     } else if (isPackageAdded(context, intent)) {
@@ -258,6 +261,11 @@ public class BroadcastTriggerReceiver extends BroadcastReceiver {
   private void triggerPacoExperimentActivenessEvent(Context context, Intent intent) {
     triggerEvent(context, InterruptCue.WALKING_TO_IDLE_TRANSITION);
   }
+
+  private void triggerPacoExperimentNoiceEvent(Context context, Intent intent) {
+    triggerEvent(context, InterruptCue.NOICE_THRESHOLD_DETECTED);
+  }
+
   /**
 	 * This is a modified version of code by Gabe Sechen on StackOverflow:
 	 * http://stackoverflow.com/questions/15563921/detecting-an-incoming-call-coming-to-an-android-device
