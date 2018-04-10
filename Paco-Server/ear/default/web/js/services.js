@@ -458,7 +458,8 @@ pacoApp.service('config', function() {
     "Notification shade dismiss all",
     "Notification shade dismiss notification",
     "Notification shade closed",
-    "Notification tapped in shade"
+    "Notification tapped in shade",
+    "Walking to Idle transition"
   ];
 
   this.esmPeriods = [

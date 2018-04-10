@@ -30,6 +30,7 @@ public class InterruptCue extends ModelBase implements Validatable, java.io.Seri
   public static final int NOTIFICATION_TRAY_SWIPE_DISMISS = 25;
   public static final int NOTIFICATION_TRAY_CANCELLED = 26;
   public static final int NOTIFICATION_CLICKED = 27;
+  public static final int WALKING_TO_IDLE_TRANSITION = 28;
 
 
 
@@ -42,7 +43,8 @@ public class InterruptCue extends ModelBase implements Validatable, java.io.Seri
                                                 ACCESSIBILITY_EVENT_VIEW_CLICKED,
                                                 NOTIFICATION_CREATED, NOTIFICATION_TRAY_OPENED,
                                                 NOTIFICATION_TRAY_CLEAR_ALL, NOTIFICATION_TRAY_SWIPE_DISMISS,
-                                                NOTIFICATION_TRAY_CANCELLED, NOTIFICATION_CLICKED};
+                                                NOTIFICATION_TRAY_CANCELLED, NOTIFICATION_CLICKED,
+                                                WALKING_TO_IDLE_TRANSITION};
 
   public static final String[] CUE_EVENT_NAMES = new String[] {"HANGUP (deprecated)", "USER_PRESENT", "Paco Action",
                                                            "App Started", "App Stopped",
@@ -56,7 +58,8 @@ public class InterruptCue extends ModelBase implements Validatable, java.io.Seri
                                                            "Notification shade dismiss all notifications",
                                                            "Notification shade dismiss notification",
                                                            "Notification shade closed",
-                                                           "Notification tapped in shade"};
+                                                           "Notification tapped in shade",
+                                                           "Walking to Idle transition"};
   public static final Integer VIEW_CLICKED = 1;
 
 

@@ -256,6 +256,9 @@
         <service android:name="com.pacoapp.paco.net.MyExperimentsFetchService" />
         <service android:name="com.pacoapp.paco.triggering.ExperimentExpirationManagerService" />
 
+        <service  android:name=".sensors.android.activeness.RegisterActivityTransitionsIntentService" />
+        <service  android:name=".sensors.android.activeness.DetectedTransitionIntentService" />
+
         <receiver android:name="com.pacoapp.paco.os.ExperimentExpirationAlarmReceiver" android:exported="false">
             <intent-filter>
                 <action android:name="com.pacoapp.paco.os.ExperimentExpirationAlarmReceiver" />
@@ -315,6 +318,7 @@
                 <action android:name="com.pacoapp.paco.action.PACO_EXPERIMENT_ENDED_ACTION" />
                 <action android:name="com.pacoapp.paco.action.PACO_EXPERIMENT_RESPONSE_RECEIVED_ACTION" />     
                 <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+                <action android:name="com.pacoapp.paco.action.PACO_EXPERIMENT_ACTIVENESS_ACTION"/>
             </intent-filter>            
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_REMOVED" />
@@ -360,7 +364,8 @@
         tools:ignore="ProtectedPermissions" />
     <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
     <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
 
     <uses-feature android:name="android.hardware.camera" android:required="false"/>
-    <uses-sdk android:minSdkVersion="14"  android:targetSdkVersion="22"></uses-sdk>
+    <uses-sdk android:minSdkVersion="16"  android:targetSdkVersion="22"></uses-sdk>
 </manifest>

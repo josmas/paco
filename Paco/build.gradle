@@ -39,7 +39,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:22.2.1'
     //compile 'rhino:js:1.7R2'
     compile files('libs/js.jar')
-    compile files('libs/gps-stripped.jar')
+//    compile files('libs/gps-stripped.jar')
     //compile 'com.google.android.gms:play-services-base:11.4.2'
     //compile 'com.google.android.gms:play-services-auth:11.4.2'
     compile files('libs/antlr-runtime-3.2.jar')
@@ -60,6 +60,8 @@ dependencies {
     compile 'com.github.jsqlparser:jsqlparser:0.9.6'
     compile files('libs/Android-Languages.jar')
     androidTestCompile 'junit:junit:4.10'
+    compile 'com.google.android.gms:play-services-auth:12.0.0'
+    compile 'com.google.android.gms:play-services-location:12.0.0'
 }
 
 /**
@@ -71,6 +73,9 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
 
+    defaultConfig {
+        multiDexEnabled true
+    }
 
     buildTypes {
         release {
